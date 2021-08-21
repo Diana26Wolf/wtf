@@ -1,0 +1,62 @@
+ <html>
+
+ <head>
+   <title>Recognize Singers</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+
+ </head>
+
+ <body>
+   <div class="container">
+
+     <center>
+       <h1>Recognize Singers</h1>
+       <br><br>
+
+       <p style="font-size: 22px;">Model is trained to identify the following singers: </p>
+       <h3 class="object">Taylor Swift</h3>
+       <br><img class="images" src="Swift.jpg">
+       <hr><br><br>
+       <h3 class="object">Shawn Mendes</h3>
+       <br><img class="images" src="Shawn.png">
+       <hr><br><br>
+       <h3 class="object">Finn Wolfhard</h3>
+       <br><img class="images" src="Finn2.jpg">
+       <hr><br><br>
+       <h3 class="object">Camila Cabello</h3>
+       <br><img class="images" src="Camila Cabello1.jpg">
+       <hr><br><br>
+       <h3 class="object">Johnny Orlando</h3>
+       <br><img class="images" src="Johnny.jpg">
+       <hr><br><br>
+       <div class="col-lg-6 col-md-6">
+         <label>Webcam View - </label>
+         <br><br>
+         <div id="camera"></div>
+       </div>
+       <div class="col-lg-6 col-md-6">
+         <label>Snapshot View - </label>
+         <br><br>
+         <div id="picture"></div>
+       </div>
+       <br><br>
+       <button onclick="Capture()" style="margin-right: 10px;"> Click Me!</button>
+       <button onclick="Compare()" style="margin-left: 10px;"> Compare</button>
+       <br><br>
+       <p style="font-size: 22px;">Object : <span id="object"></span> </p>
+       <p style="font-size: 22px;">Accuracy : <span id="acc"></span> </p>
+     </center>
+
+   </div>
+   <script src="script.js"></script>
+
+ </body>
+
+ </html>
